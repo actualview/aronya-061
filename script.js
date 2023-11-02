@@ -8,8 +8,8 @@ function staticLoadPlaces() {
         {
             name: 'Ptera',
             location: {
-                lat: 35.150712,
-                lng: 129.135762,
+                lat: 35.150387,
+                lng: 129.134514,
             }
         },
     ];
@@ -23,9 +23,9 @@ function renderPlaces(places) {
         let longitude = place.location.lng;
 
         let model = document.createElement('a-entity');
-        model.setAttribute('gps-entity-place', `latitude: ${35.150712}; longitude: ${129.135762};`);
+        model.setAttribute('gps-entity-place', `latitude: ${35.150387}; longitude: ${129.134514};`);
         model.setAttribute('gltf-model', './assets/ptera.gltf');
-        model.setAttribute('rotation', '0 15 0');
+        model.setAttribute('rotation', '0 65 0');
         model.setAttribute('animation-mixer', '');
         model.setAttribute('scale', '1.2 1.2 1.2');
 
